@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin-Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome To ElectroLibrary</h1>
+        <button id="book-btn" class="btn">New Book</button>
+    </header>
+    <main>
+        <section>
+            <div class="form-container">
+                <form action="https://google.com">
+                    <p class="form-paragraph">
+                        <label for="title" id="title">
+                            Title <br>
+                            <input type="text" id="title-value">
+                        </label>
+                    </p>
+                    <p class="form-paragraph">
+                        <label for="author" id="author">
+                            Author <br>
+                            <input type="text" id="author-value">
+                        </label>
+                    </p>
+                    <p class="form-paragraph">
+                        <label for="pages" id="pages">
+                            Number of pages <br>
+                            <input min="1" max="5000" type="number" id="pages-value">
+                        </label>
+                    </p>
+                    <p class="form-paragraph">
+                        <label for="status" id="status">
+                            <input id="check-status" value="check-status" type="checkbox"> Read
+                        </label>
+                    </p>
+                    <button id="add-button" class="btn-form" type="button">Add</button>
+                    <button id="cancel-button" class="btn-form" type="button">Cancel</button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="grid-container">
+<!--                <div class="grid-item">
+                    <button class="small btn">X</button>
+                    <h2 class="title-heading">Kafka on the shore</h2>
+                    <p class="author-paragraph">Haruki Murakami</p>
+                    <p class="pages-paragraph">411 pages</p>
+                    <button id="read-status" class="btn read-status">Read</button>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>L
