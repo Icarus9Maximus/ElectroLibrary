@@ -1,9 +1,5 @@
 const myLibrary = [];
 
-
-
-// It turns out that I can access them through the data attribute.
-
 // This is the constructor function
 function Book(title, author, pages, read) {
     this.title = title;
@@ -12,9 +8,6 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
-// The steps I can take along the way. First I must figure out how to use the data attribute and to eventually link it with my 
-// JS. 
-// I think that this function ought to add the book to the JS not on the website
 function addBookToLibrary() {
     const newDiv = document.createElement("div");
     const secondHeading = document.createElement("h2");
@@ -80,7 +73,6 @@ function addBookToLibrary() {
 //    secondPara.textContent = pages.value + " pages";
     secondPara.textContent = `${pages.value} pages`;
 
-    // If the user doesn't put in all values alert this.
     if (!title.value || !author.value || !pages.value) {
         alert("Please fill in all the values.");
         return;
@@ -120,14 +112,7 @@ bookBtn.addEventListener("click", () => {
 // The addBtn adds Books to the library
 addBtn.addEventListener("click", addBookToLibrary);
 
-//The cancelBtn makes the form form disappear when clicked.
+//The cancelBtn makes the form disappear when clicked.
 cancelBtn.addEventListener("click", () => {
     formContainer.style.visibility = "hidden";
 });
-
-// When the window loads which book or books would I like to see first.
-window.addEventListener("DOMContentLoaded", () => {
-
-    displayBooks(myLibrary);
-
-})
